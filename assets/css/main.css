@@ -2398,11 +2398,14 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			transition: all 0.5s ease-in-out;
+			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 		}
 
 			.image.fit img {
 				width: 100%;
 			}
+
 
 		.image.main {
 			display: block;
@@ -2413,6 +2416,90 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+		.image.fit .hovertext1{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			border-radius: 8px;
+			-webkit-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			line-height: 100%;
+			background-image: url(../../images/pic07.jpg);
+			background-size: cover;
+			opacity: 0;
+		}
+		.image.fit .hovertext1:hover{
+			opacity: 1;
+		}
+
+		.image.fit .hovertext2{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			border-radius: 8px;
+			-webkit-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			line-height: 100%;
+			background-image: url(../../images/pic08.jpg);
+			background-size: cover;
+			opacity: 0;
+		}
+		.image.fit .hovertext2:hover{
+			opacity: 1;
+		}
+
+		.image.fit .hovertext3{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			border-radius: 8px;
+			-webkit-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			line-height: 100%;
+			background-image: url(../../images/pic09.jpg);
+			background-size: cover;
+			opacity: 0;
+		}
+		.image.fit .hovertext3:hover{
+			opacity: 1;
+		}
+			
+			.image.fit:hover .text {
+			opacity: 1;
+		}
+
+
+
+		.image.fit .text {
+			text-align: center;
+			font-size: 0.9em;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translateY(-50%);
+			transform: translateX(-50%);
+			font-weight: bold;
+			color: white !important;
+			opacity: 0;
+			transition: all 0.5s ease-in-out;
+			}
+
+		@media screen and (max-width: 600px) {
+			.image.fit .text {
+				top: 35%;
+				font-size: 0.7em;
+			}
+		  }
 
 /* List */
 
@@ -3519,9 +3606,9 @@ input, select, textarea {
 			border-color: #dddddd;
 		}
 
-			#main .icon.major:before {
+			/*#main .icon.major:before {
 				border-color: #dddddd;
-			}
+			}*/
 
 		#main .icon.alt {
 			border-color: #dddddd;
@@ -3576,9 +3663,9 @@ input, select, textarea {
 			border-color: #dddddd;
 		}
 
-		#main .spotlight .image {
+		/*#main .spotlight .image {
 			border-color: #dddddd;
-		}
+		}*/
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
