@@ -2473,6 +2473,48 @@ input, select, textarea {
 		.image.fit .hovertext3:hover{
 			opacity: 1;
 		}
+
+		.image.fit .hovertext4{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			border-radius: 8px;
+			-webkit-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			line-height: 100%;
+			background-image: url(../../images/pic01.jpg);
+			background-size: cover;
+			opacity: 0;
+		}
+		.image.fit .hovertext4:hover{
+			opacity: 1;
+		}
+			
+			.image.fit:hover .text {
+			opacity: 1;
+		}
+
+		.image.fit .hovertext5{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			border-radius: 8px;
+			-webkit-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			line-height: 100%;
+			background-image: url(../../images/pic05.jpg);
+			background-size: cover;
+			opacity: 0;
+		}
+		.image.fit .hovertext5:hover{
+			opacity: 1;
+		}
 			
 			.image.fit:hover .text {
 			opacity: 1;
